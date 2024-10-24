@@ -23,7 +23,7 @@ const projects = [
   {
     year: "2024",
     title: "PORTFOLIO",
-    link: "https://github.com/het03/Portfolio",
+    link: "https://github.com/het03/Portfolio-v2.0",
   },
   {
     year: "2024",
