@@ -7,7 +7,8 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Het",
-  description: "Het's portfolio showcasing his works and resume.",
+  description:
+    "Het Gajera - Designer & Developer | Crafting engaging web experiences with a focus on animation, responsiveness, and interactivity",
 };
 
 const DrukWide = localfont({
@@ -50,7 +51,10 @@ export default function RootLayout({
           sizes="180x180"
           href="/apple-touch-icon.png"
         />
-        <meta name="apple-mobile-web-app-title" content="Het" />
+        <meta
+          name="google-site-verification"
+          content="kbIGtFg4O7wsl6Im-UEqRtiW0oSGeAe4HXUl6JczJa8"
+        />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={`${DrukWide.className}`}>
