@@ -1,5 +1,5 @@
 "use client";
-import Backbutton from "@/components/UI/back";
+import Backbutton from "@/components/ui/back";
 import React from "react";
 
 export default function page() {

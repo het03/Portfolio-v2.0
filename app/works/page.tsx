@@ -1,5 +1,5 @@
 "use client";
-import Backbutton from "@/components/UI/back";
+import Backbutton from "@/components/ui/back";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ThemeSwitcher from "./UI/theme-switcher";
+import ThemeSwitcher from "./ui/theme-switcher";
 
 const dynamicData = {
   name: "HET GAJERA",
