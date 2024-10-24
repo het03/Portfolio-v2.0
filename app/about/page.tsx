@@ -1,5 +1,5 @@
 "use client";
-import Backbutton from "@/components/ui/back";
+import Backbutton from "@/components/UI/back";
 import Link from "next/link";
 import React from "react";
 
