@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localfont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from "@/components/UI/theme-provider";
+import { ThemeProvider } from "@/components/ui/theme-provider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -9,6 +9,30 @@ export const metadata: Metadata = {
   title: "Het Gajera",
   description:
     "Designer & Developer | Crafting engaging web experiences with a focus on animation, responsiveness, and interactivity",
+  openGraph: {
+    title: "Het Gajera",
+    description:
+      "Designer & Developer | Crafting engaging web experiences with a focus on animation, responsiveness, and interactivity",
+    url: "https://hetgajera.vercel.app/",
+    siteName: "Het Gajera",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 628,
+        alt: "Het Gajera",
+      },
+    ],
+    locale: "en_US",
+  },
+  keywords: [
+    "Het",
+    "Het Gajera",
+    "Designer",
+    "Developer",
+    "Portfolio",
+    "Frontend Developer",
+  ],
 };
 
 const DrukWide = localfont({
