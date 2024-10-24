@@ -6,9 +6,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "Het",
+  title: "Het Gajera",
   description:
-    "Het Gajera - Designer & Developer | Crafting engaging web experiences with a focus on animation, responsiveness, and interactivity",
+    "Designer & Developer | Crafting engaging web experiences with a focus on animation, responsiveness, and interactivity",
 };
 
 const DrukWide = localfont({
