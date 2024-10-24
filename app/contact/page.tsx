@@ -3,13 +3,19 @@ import Backbutton from "@/components/UI/back";
 import React from "react";
 
 export default function page() {
-  async function handleSubmit(event: any) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
+    const form = event.currentTarget;
+    const name = (form.elements.namedItem("name") as HTMLInputElement)?.value;
+    const email = (form.elements.namedItem("email") as HTMLInputElement)?.value;
+    const message = (form.elements.namedItem("message") as HTMLTextAreaElement)
+      ?.value;
+
     const data = {
-      name: String(event.target.name.value),
-      email: String(event.target.email.value),
-      message: String(event.target.message.value),
+      name,
+      email,
+      message,
     };
 
     const response = await fetch("/api/route", {
@@ -22,9 +28,7 @@ export default function page() {
 
     if (response.ok) {
       alert("Message sent!");
-      event.target.name.value = "";
-      event.target.email.value = "";
-      event.target.message.value = "";
+      form.reset();
     } else {
       alert("Message failed to send!");
     }
