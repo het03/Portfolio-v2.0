@@ -48,7 +48,10 @@ export default function page() {
           {/* Lower Section with Flex Grow */}
           <div className="flex-grow">
             <div className="grid md:h-64">
-              <form className="grid col-span-4 grid-cols-1 md:grid-cols-4">
+              <form
+                onSubmit={handleSubmit}
+                className="grid col-span-4 grid-cols-1 md:grid-cols-4"
+              >
                 <div className="grid md:col-span-3 md:grid-cols-3 px-6 py-12 md:px-0 md:py-0">
                   <div className="col-span-1 place-content-center pb-8 md:mx-8">
                     <input
