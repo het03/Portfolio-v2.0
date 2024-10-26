@@ -56,7 +56,7 @@ export default function Page() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="px-5 md:px-6 xl:px-10 min-h-screen flex flex-col items-center justify-center gap-5 md:gap-10"
+                className="px-2 md:px-6 xl:px-10 min-h-screen flex flex-col items-center justify-center gap-5 md:gap-10"
               >
                 <motion.div
                   animate={{
