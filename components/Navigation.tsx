@@ -51,7 +51,10 @@ export default function Navigation() {
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <Link href={item.href} className="p-1 lg:p-2">
+            <Link
+              href={item.href}
+              className="p-1 lg:p-2 visited:text-foreground"
+            >
               {item.label}
             </Link>
           </li>
